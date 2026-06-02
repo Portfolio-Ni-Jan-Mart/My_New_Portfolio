@@ -1,12 +1,10 @@
-// EXISTING THEME TOGGLE CODE
 function toggleMenu() {
     document.getElementById("nav").classList.toggle("active");
 }
 
 document.getElementById("themeToggle").onclick = function() {
     document.body.classList.toggle("dark");
-}
-
+};
 
 // ==========================
 // CV MODAL SCRIPT
@@ -51,18 +49,6 @@ document.querySelector('.prev').onclick = () => {
     });
 };
 
-// ==========================
-// PREV & NEXT BUTTON
-// ==========================
-
-const carousel = document.querySelector('.certificate-carousel');
-
-document.querySelector('.next').onclick = () => {
-    carousel.scrollBy({
-        left: 400,
-        behavior: 'smooth'
-    });
-};
 
 
 // ==========================

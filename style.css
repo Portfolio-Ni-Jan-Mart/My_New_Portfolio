@@ -6,7 +6,7 @@
 
 body.dark {
     --bg: #111;
-    --text: #079666;
+    --text: #ffffff;
     --primary: #00c3ff;
 }
 
@@ -54,12 +54,16 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: gold;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: rgba(231, 37, 33, 0.58)
+    color: rgba(231, 37, 33, 0.58);
+}
+
+body.dark nav a {
+    color: #00c3ff;
 }
 
 .cv-btn {
