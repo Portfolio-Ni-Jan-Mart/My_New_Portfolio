@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio for Job</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><img src="img/logo.png" alt=""></div>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificate</li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume-area">My Resume</a></li>
+            </ul>
+        </nav>
+
+        <div class="controls">
+            <button id="themeToggle">🌙</button>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <img src="img/croped .JPG" alt="Your Name" class="hero-photo">
+        <h1 class="animate">Hi, I'm Jan Mart</h1>
+        <p class="animate">Frontend Developer | Backend Developer | IT SUPPORT</p>
+        <a href="#contact" class="btn animate">Hire Me</a>
+        <canvas id="glowBg"></canvas>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Fresh graduate of BS Information Technology from Data Center College of the Philippines – Baguio City with hands-on experience in frontend and backend web development during internship at Techno Dream Baguio. Skilled in creating responsive websites
+            using HTML, CSS, JavaScript, WordPress, PHP, and MySQL. Passionate about web development, IT support, troubleshooting, and continuously learning new technologies.
+        </p>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="img/projet 1 ojt.png" alt="Raphine Website Preview" class="project-img">
+
+                <h3>Raphine Afro Braiding Website</h3>
+
+                <p class="tech">
+                    HTML • CSS • JavaScript • WordPress • Elementor
+                </p>
+
+                <p>
+                    Developed during OJT at Techno Dream Baguio. Created responsive frontend layouts and assisted in backend website management using WordPress and Elementor.
+                </p>
+
+                <p><strong>Role:</strong> Frontend & Backend Support Developer</p>
+
+                <div class="project-buttons">
+                    <button class="demo-btn" onclick="window.open('https://beta.technodreamcenter.com/OJT/raphineafrobraiding.com/')">
+Live Demo
+</button>
+
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/project 3.png" alt="Online Consultation System Preview" class="project-img">
+
+                <h3>Online Consultation System</h3>
+
+                <p class="tech">
+                    HTML • CSS • JavaScript • PHP • MySQL
+                </p>
+
+                <p>
+                    Web-based consultation system with appointment scheduling, patient records, and admin management features.
+                </p>
+
+                <p><strong>Role:</strong> Frontend Developer</p>
+
+                <p><strong>Academic Project:</strong> 4th Year – 1st Semester (Integrative Programming)</p>
+
+                <div class="project-buttons">
+                    <button class="demo-btn" onclick="window.open('https://macadaegj-act1and2-integrative.netlify.app/')">
+            Live Demo
+        </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/project 2 old portfolio.png" alt="Portfolio Preview" class="project-img">
+
+                <h3>Personal Portfolio Website</h3>
+
+                <p class="tech">
+                    HTML • CSS • JavaScript
+                </p>
+
+                <p>
+                    This project was ask by our Instructor to made when I was in 3rd year our subject was Web Programing & Design.
+                </p>
+
+                <p><strong>Role:</strong> Full Stack Designer</p>
+
+                <div class="project-buttons">
+                    <button class="demo-btn" onclick="window.open('https://bsit-web-programming-2024.github.io/janmart_site/')">Live Demo</button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="certificate" class="section">
+        <h2>Certificates</h2>
+
+        <div class="certificate-carousel">
+            <div class="cert-card">
+                <img src="img/wifi.png" alt="Certificate 1">
+            </div>
+
+            <div class="cert-card">
+                <img src="img/Automating.png" alt="Certificate 2">
+            </div>
+
+            <div class="cert-card">
+                <img src="img/CCC.jpg" alt="Certificate 3">
+            </div>
+
+            <div class="cert-card">
+                <img src="img/CFPDS.png" alt="Certificate 4">
+            </div>
+
+            <div class="cert-card">
+                <img src="img/Comptia.png" alt="Certificate 5">
+            </div>
+        </div>
+
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </section>
+
+
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+
+        <form id="contactForm" action="https://formspree.io/f/mjgznzkz" method="POST">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <div class="g-recaptcha" data-sitekey="6LdHJgktAAAAAEmUdmBJqgjlxQSH0za-fMhCBUwb">
+            </div>
+
+            <button type="submit">Send Message</button>
+
+            <p id="status"></p>
+        </form>
+    </section>
+
+
+    <section id="resume-area">
+        <div class="resume-wrapper">
+
+            <div class="resume-title">
+                <h2>My Resume</h2>
+                <p>IT Support / Web Developer</p>
+            </div>
+
+            <div class="resume-grid">
+
+                <div class="resume-info">
+                    <h3>Personal Information</h3>
+
+                    <p><strong>Name:</strong> Jan Mart B. Macadaeg</p>
+                    <p><strong>Birthday:</strong> January 17, 2003</p>
+                    <p><strong>Address:</strong> #110 BHD Compound, T. Alonzo St., Baguio City</p>
+                    <p><strong>Email:</strong> jmmacadaeg17@gmail.com</p>
+                    <p><strong>Phone:</strong> 09056531625/09926050334</p>
+                    <p><strong>Nationality:</strong> Filipino</p>
+                </div>
+
+                <div class="resume-info">
+                    <h3>Education</h3>
+
+                    <p>
+                        <strong>College:</strong><br> BS Information Technology (2022–2026)<br> Data Center College of the Philippines – Baguio
+                    </p>
+
+                    <p>
+                        <strong>Senior High School:</strong><br> Data Center College of the Philippines – Baguio
+                    </p>
+
+                    <p>
+                        <strong>Junior High School:</strong><br> Saint Louis University JHS
+                    </p>
+                </div>
+
+                <div class="resume-info">
+                    <h3>Personal Skills</h3>
+
+                    <ul>
+                        <li>Problem-Solving Skills</li>
+                        <li>Good Communication Skills</li>
+                        <li>Teamwork and Collaboration</li>
+                        <li>Adaptability and Willingness to Learn</li>
+                        <li>Time Management</li>
+                        <li>Attention to Detail</li>
+                        <li>Critical Thinking</li>
+                        <li>Customer Service Oriented</li>
+                    </ul>
+                </div>
+
+
+                <div class="resume-info">
+                    <h3>Technical Skills</h3>
+
+                    <ul>
+                        <li>Computer Troubleshooting</li>
+                        <li>Basic Networking</li>
+                        <li>HTML / CSS / JavaScript / Python / C#</li>
+                        <li>Responsive Web Design</li>
+                        <li>PHP & MySQL Basics</li>
+                        <li>Microsoft Office</li>
+                    </ul>
+                </div>
+
+                <div class="resume-info">
+                    <h3>Design & Editing Skills</h3>
+
+                    <ul>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe InDesign</li>
+                        <li>Basic Graphic Design</li>
+                        <li>Photo Editing</li>
+                        <li>Layout Design</li>
+                    </ul>
+                </div>
+
+                <div class="resume-info">
+                    <h3>Languages</h3>
+
+                    <ul>
+                        <li>Tagalog</li>
+                        <li>English</li>
+                    </ul>
+                </div>
+
+                <div class="resume-info">
+                    <h3>Awards</h3>
+
+                    <p>
+                        <strong>Loyalty Awardee</strong><br> Data Center College of the Philippines – Baguio<br> 2022–2026
+                    </p>
+                </div>
+
+                <div class="resume-info">
+                    <h3>Career Objective</h3>
+
+                    <p>
+                        To obtain an entry-level position as an IT Support or Web Developer where I can apply my technical and problem-solving skills while continuously learning and contributing to the company.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="resume-download">
+        <button id="openCvModal" class="download-trigger">
+        Download CV
+    </button>
+    </div>
+
+    <div id="cvModalBox" class="cv-modal-box">
+
+        <div class="cv-modal-content">
+
+            <span id="closeCvModal" class="cv-close-btn">&times;</span>
+
+            <h2>Download My CV</h2>
+
+            <p>
+                You can download my updated resume here.
+            </p>
+
+            <a href="cv.pdf" download class="cv-download-btn">
+            Download Resume
+        </a>
+
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        © My Portfolio | All Rights Reserved
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="glowing.js"></script>
+</body>
+
+</html>
