@@ -15,15 +15,18 @@
         <div class="logo"><img src="img/logo.png" alt=""></div>
 
         <nav id="nav">
+            <button class="close-menu" onclick="toggleMenu()">✕</button>
+
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificate">Certificate</li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#resume-area">My Resume</a></li>
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certificate" onclick="toggleMenu()">Certificate</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#resume-area" onclick="toggleMenu()">My Resume</a></li>
             </ul>
         </nav>
+
 
         <div class="controls">
             <button id="themeToggle">🌙</button>
@@ -38,7 +41,7 @@
     <section class="hero" id="home">
         <img src="img/croped .JPG" alt="Your Name" class="hero-photo">
         <h1 class="animate">Hi, I'm Jan Mart</h1>
-        <p class="animate">Frontend Developer | Backend Developer | IT SUPPORT</p>
+        <p class="animate">Frontend Developer | Backend Developer | Entry-Level IT Professional</p>
         <a href="#contact" class="btn animate">Hire Me</a>
         <canvas id="glowBg"></canvas>
     </section>
