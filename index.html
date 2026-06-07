@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio for Job</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
@@ -48,9 +49,22 @@
 
     <section id="about" class="section">
         <h2>About Me</h2>
-        <p>Fresh graduate of BS Information Technology from Data Center College of the Philippines – Baguio City with hands-on experience in frontend and backend web development during internship at Techno Dream Baguio. Skilled in creating responsive websites
-            using HTML, CSS, JavaScript, WordPress, PHP, and MySQL. Passionate about web development, IT support, troubleshooting, and continuously learning new technologies.
-        </p>
+
+        <div class="about-box">
+            <p>
+                Fresh graduate of BS Information Technology from Data Center College of the Philippines – Baguio City with hands-on experience in frontend and backend web development during internship at Techno Dream Baguio. Skilled in creating responsive websites using
+                HTML, CSS, JavaScript, WordPress, PHP, and MySQL. Passionate about web development, IT support, troubleshooting, and continuously learning new technologies.
+            </p>
+
+            <div class="skills-logo">
+                <img src="img/html.jpg" alt="HTML">
+                <img src="img/css logo.jpg" alt="CSS">
+                <img src="img/js.jpg" alt="JavaScript">
+                <img src="img/php.jpg" alt="PHP">
+                <img src="img/sql.png" alt="MySQL">
+                <img src="img/wordpress.png" alt="WordPress">
+            </div>
+        </div>
     </section>
 
     <section id="projects" class="section">
@@ -116,10 +130,12 @@ Live Demo
                 </p>
 
                 <p>
-                    This project was ask by our Instructor to made when I was in 3rd year our subject was Web Programing & Design.
+                    Developed a responsive personal portfolio website to showcase academic projects, technical skills, certifications, and professional background. Designed the user interface and implemented interactive features using HTML, CSS, and JavaScript.
                 </p>
 
-                <p><strong>Role:</strong> Full Stack Designer</p>
+                <p><strong>Role:</strong> Frontend Developer & UI Designer</p>
+
+                <p><strong>Academic Project:</strong> 3rd Year – Web Programming & Design</p>
 
                 <div class="project-buttons">
                     <button class="demo-btn" onclick="window.open('https://bsit-web-programming-2024.github.io/janmart_site/')">Live Demo</button>
@@ -135,7 +151,7 @@ Live Demo
 
         <div class="certificate-carousel">
             <div class="cert-card">
-                <img src="img/wifi.png" alt="Certificate 1">
+                <img src="img/ojt cert.png" alt="Certificate 1">
             </div>
 
             <div class="cert-card">
@@ -181,6 +197,10 @@ Live Demo
             <div class="cert-card">
                 <img src="img/CSS.png" alt="Certificate 12">
             </div>
+
+            <div class="cert-card">
+                <img src="img/wifi.png" alt="Certificate 13">
+            </div>
         </div>
 
         <button class="prev">❮</button>
@@ -200,7 +220,7 @@ Live Demo
 
             <textarea name="message" placeholder="Your Message" required></textarea>
 
-            <div class="g-recaptcha" data-sitekey="6LdHJgktAAAAAEmUdmBJqgjlxQSH0za-fMhCBUwb">
+            <div class="g-recaptcha" data-sitekey="6LcZQgotAAAAAGZTYAJU8oDXi3ubrU_l2dBthZb8">
             </div>
 
             <button type="submit">Send Message</button>
@@ -347,7 +367,25 @@ Live Demo
 
 
     <footer>
-        © My Portfolio | All Rights Reserved
+        <p>© My Portfolio | All Rights Reserved</p>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/Kiefernlex15/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://twitter.com/yourprofile" target="_blank">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+
+            <a href="https://youtube.com/@yourchannel" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+            <a href="https://instagram.com/yourprofile" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
